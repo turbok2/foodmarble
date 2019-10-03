@@ -21,6 +21,7 @@ import { Container,
   FooterTab
 } from "native-base";
 
+import Draggable from  "../../Components/draggable"
 import styles from "./styles";
 const pick1 = require("../../../assets/pick_food1.png");
 const pick2 = require("../../../assets/notyet.png");
@@ -81,7 +82,36 @@ class SelectFood extends Component {
           </Body>
           <Right />
         </Header>
-        <Content >
+  
+          {/* <View style={{height:100, backgroundColor:'#f8e71c'}}>
+            <Draggable style={{height:100}}>
+              <View style={{backgroundColor:'#7ed321'}}>
+                <Text>test</Text>
+              </View>
+            </Draggable>          
+          </View> */}
+        <Content  >  
+        {/* scrollEnabled={false} */}
+
+          <View style={{flexDirection: "row",height:100, backgroundColor :'#f8e71c'}}>
+              <Draggable>
+                <View style={{backgroundColor:'#7ed321'}}>
+                  <Text>test</Text>
+                </View>
+              </Draggable>
+              <Draggable />
+              <Draggable />
+              <Draggable />
+              <Draggable />
+          </View>        
+
+          <View style={{flex:1}}>
+            <View style={{height: 200, backgroundColor: "#00334d"}}>
+              <H1>Drop them here!</H1>
+            </View>
+            <View style={{height:100}} />
+          </View>
+
           <Image source = {require("../../../assets/reasult_foods.png")}
               style={{ resizeMode: "stretch", width: null, flex:1 }}/>
           <H1 style={{marginTop:20 }}>태그</H1>
@@ -127,6 +157,9 @@ class SelectFood extends Component {
           <Button big block style={{marginTop:40 ,margin:20, backgroundColor: "#dc4239",paddingLeft:10}}>
               <Text>선택 음식 코스 추천</Text>
           </Button>
+
+
+          
         </Content>
 
 
