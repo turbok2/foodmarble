@@ -1,0 +1,209 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\work\react\src\react-native-training\foodmarble\android\app\src\main\AndroidManifest.xml:1:1-27:12
+INJECTED from C:\work\react\src\react-native-training\foodmarble\android\app\src\main\AndroidManifest.xml:1:1-27:12
+INJECTED from C:\work\react\src\react-native-training\foodmarble\android\app\src\main\AndroidManifest.xml:1:1-27:12
+INJECTED from C:\work\react\src\react-native-training\foodmarble\android\app\src\main\AndroidManifest.xml:1:1-27:12
+MERGED from [:react-native-vector-icons] C:\work\react\src\react-native-training\foodmarble\node_modules\react-native-vector-icons\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-gesture-handler] C:\work\react\src\react-native-training\foodmarble\node_modules\react-native-gesture-handler\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:2:1-11:12
+MERGED from [com.facebook.react:react-native:0.58.5] C:\Users\turbo\.gradle\caches\transforms-1\files-1.1\jetified-react-native-0.58.5.aar\99c2aeceb0ef130f378df3e617ecef02\AndroidManifest.xml:2:1-15:12
+MERGED from [androidx.appcompat:appcompat:1.0.0-rc01] C:\Users\turbo\.gradle\caches\transforms-1\files-1.1\appcompat-1.0.0-rc01.aar\c219191a24b08fb3c2525c4d69ef5922\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.fragment:fragment:1.0.0-rc01] C:\Users\turbo\.gradle\caches\transforms-1\files-1.1\fragment-1.0.0-rc01.aar\785c557e963294230ce99e2e9beadf22\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0-rc01] C:\Users\turbo\.gradle\caches\transforms-1\files-1.1\vectordrawable-animated-1.0.0-rc01.aar\e7fd506bf7631f424a851205bbf62157\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0-rc01] C:\Users\turbo\.gradle\caches\transforms-1\files-1.1\legacy-support-core-ui-1.0.0-rc01.aar\3af6c4b4c26adf9558a56a6e9612d25e\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0-rc01] C:\Users\turbo\.gradle\caches\transforms-1\files-1.1\legacy-support-core-utils-1.0.0-rc01.aar\c52f2b42e9bbe6ccd6c349ab815383d9\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.0.0-rc01] C:\Users\turbo\.gradle\caches\transforms-1\files-1.1\vectordrawable-1.0.0-rc01.aar\6f4bd2e03120e1b335da1bf2e4df5abd\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0-rc01] C:\Users\turbo\.gradle\caches\transforms-1\files-1.1\loader-1.0.0-rc01.aar\aad6e495318f090ba079b8d310ba1134\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.viewpager:viewpager:1.0.0-rc01] C:\Users\turbo\.gradle\caches\transforms-1\files-1.1\viewpager-1.0.0-rc01.aar\bdc653dc847635804872f992722e9bc7\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0-rc01] C:\Users\turbo\.gradle\caches\transforms-1\files-1.1\coordinatorlayout-1.0.0-rc01.aar\2c2782dd6e2b27b38c211d3a01828b83\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0-rc01] C:\Users\turbo\.gradle\caches\transforms-1\files-1.1\drawerlayout-1.0.0-rc01.aar\51e29ff12215ad76b3f7cd180b9048c8\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0-rc01] C:\Users\turbo\.gradle\caches\transforms-1\files-1.1\slidingpanelayout-1.0.0-rc01.aar\cbfcb6d08766947b72c1dde701d3ce5e\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.0.0-rc01] C:\Users\turbo\.gradle\caches\transforms-1\files-1.1\customview-1.0.0-rc01.aar\472607c9ddba27f8a34e82a32dcca354\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0-rc01] C:\Users\turbo\.gradle\caches\transforms-1\files-1.1\swiperefreshlayout-1.0.0-rc01.aar\8cd4a7d4fef682d2d09e08eb9f90d51d\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0-rc01] C:\Users\turbo\.gradle\caches\transforms-1\files-1.1\asynclayoutinflater-1.0.0-rc01.aar\581d8e7f4537d5e1297754fd3cb86914\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core:1.0.0-rc01] C:\Users\turbo\.gradle\caches\transforms-1\files-1.1\core-1.0.0-rc01.aar\b5b252b13d919023ffab7bd9d8b04fe4\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0-rc01] C:\Users\turbo\.gradle\caches\transforms-1\files-1.1\versionedparcelable-1.0.0-rc01.aar\66988ebd1d56ea45f63983365d09d87c\AndroidManifest.xml:17:1-25:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0-rc01] C:\Users\turbo\.gradle\caches\transforms-1\files-1.1\cursoradapter-1.0.0-rc01.aar\eea9b8cbed720f0d1901246e6c514eca\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.documentfile:documentfile:1.0.0-rc01] C:\Users\turbo\.gradle\caches\transforms-1\files-1.1\documentfile-1.0.0-rc01.aar\4d9989d6e40fec5ec14ec862c0b5e6a2\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0-rc01] C:\Users\turbo\.gradle\caches\transforms-1\files-1.1\localbroadcastmanager-1.0.0-rc01.aar\241d6db1a2f891ac55236ca1163ace33\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0-rc01] C:\Users\turbo\.gradle\caches\transforms-1\files-1.1\print-1.0.0-rc01.aar\17edf81cfea141cfb1bb81b8d6667506\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.interpolator:interpolator:1.0.0-rc01] C:\Users\turbo\.gradle\caches\transforms-1\files-1.1\interpolator-1.0.0-rc01.aar\bbf0b3ebe85a8f8a0dfeab7d8f0a11ba\AndroidManifest.xml:17:1-22:12
+MERGED from [com.facebook.fresco:fresco:1.10.0] C:\Users\turbo\.gradle\caches\transforms-1\files-1.1\jetified-fresco-1.10.0.aar\201705d7682632c30ba3d4b40980da33\AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.10.0] C:\Users\turbo\.gradle\caches\transforms-1\files-1.1\imagepipeline-okhttp3-1.10.0.aar\59d6d6df2b9779b673acd48cc878b9bb\AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:drawee:1.10.0] C:\Users\turbo\.gradle\caches\transforms-1\files-1.1\jetified-drawee-1.10.0.aar\a8af2293d0ef17cde090666bd0238ba0\AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline:1.10.0] C:\Users\turbo\.gradle\caches\transforms-1\files-1.1\jetified-imagepipeline-1.10.0.aar\f6a47d82be71698b9b46d2b513d8fed7\AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline-base:1.10.0] C:\Users\turbo\.gradle\caches\transforms-1\files-1.1\jetified-imagepipeline-base-1.10.0.aar\ea3e91dbd9e7c0e53ee70c5949f362e2\AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.soloader:soloader:0.6.0] C:\Users\turbo\.gradle\caches\transforms-1\files-1.1\soloader-0.6.0.aar\4463e48a1ad9118ce3c763fc48cbeace\AndroidManifest.xml:2:1-13:12
+MERGED from [org.webkit:android-jsc:r174650] C:\Users\turbo\.gradle\caches\transforms-1\files-1.1\android-jsc-r174650.aar\be9710987ceba6ee52c5cd749dc75a9b\AndroidManifest.xml:1:1-3:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0-rc01] C:\Users\turbo\.gradle\caches\transforms-1\files-1.1\lifecycle-runtime-2.0.0-rc01.aar\1d96b1caa484e22e87023fdd5307a9fd\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0-rc01] C:\Users\turbo\.gradle\caches\transforms-1\files-1.1\lifecycle-viewmodel-2.0.0-rc01.aar\55fd80132e58cb67c081489999435394\AndroidManifest.xml:17:1-22:12
+MERGED from [com.facebook.fresco:fbcore:1.10.0] C:\Users\turbo\.gradle\caches\transforms-1\files-1.1\jetified-fbcore-1.10.0.aar\69a2eb96a0fae19201df2e4dc77b8652\AndroidManifest.xml:2:1-9:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0-rc01] C:\Users\turbo\.gradle\caches\transforms-1\files-1.1\lifecycle-livedata-core-2.0.0-rc01.aar\d1e371285005f2dc3f54f3c042256d3e\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.arch.core:core-runtime:2.0.0-rc01] C:\Users\turbo\.gradle\caches\transforms-1\files-1.1\core-runtime-2.0.0-rc01.aar\3f698497f64859c12599e17889726487\AndroidManifest.xml:17:1-22:12
+INJECTED from C:\work\react\src\react-native-training\foodmarble\android\app\src\main\AndroidManifest.xml:1:1-27:12
+INJECTED from C:\work\react\src\react-native-training\foodmarble\android\app\src\main\AndroidManifest.xml:1:1-27:12
+INJECTED from C:\work\react\src\react-native-training\foodmarble\android\app\src\main\AndroidManifest.xml:1:1-27:12
+	package
+		ADDED from C:\work\react\src\react-native-training\foodmarble\android\app\src\main\AndroidManifest.xml:2:3-38
+		INJECTED from C:\work\react\src\react-native-training\foodmarble\android\app\src\main\AndroidManifest.xml
+		INJECTED from C:\work\react\src\react-native-training\foodmarble\android\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from C:\work\react\src\react-native-training\foodmarble\android\app\src\main\AndroidManifest.xml
+		ADDED from C:\work\react\src\react-native-training\foodmarble\android\app\src\main\AndroidManifest.xml:1:1-27:12
+		INJECTED from C:\work\react\src\react-native-training\foodmarble\android\app\src\main\AndroidManifest.xml
+	android:versionCode
+		INJECTED from C:\work\react\src\react-native-training\foodmarble\android\app\src\main\AndroidManifest.xml
+		ADDED from C:\work\react\src\react-native-training\foodmarble\android\app\src\main\AndroidManifest.xml:1:1-27:12
+		INJECTED from C:\work\react\src\react-native-training\foodmarble\android\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\work\react\src\react-native-training\foodmarble\android\app\src\main\AndroidManifest.xml:1:11-69
+uses-permission#android.permission.INTERNET
+ADDED from C:\work\react\src\react-native-training\foodmarble\android\app\src\main\AndroidManifest.xml:4:5-67
+	android:name
+		ADDED from C:\work\react\src\react-native-training\foodmarble\android\app\src\main\AndroidManifest.xml:4:22-64
+uses-permission#android.permission.SYSTEM_ALERT_WINDOW
+ADDED from C:\work\react\src\react-native-training\foodmarble\android\app\src\main\AndroidManifest.xml:5:5-77
+MERGED from [com.facebook.react:react-native:0.58.5] C:\Users\turbo\.gradle\caches\transforms-1\files-1.1\jetified-react-native-0.58.5.aar\99c2aeceb0ef130f378df3e617ecef02\AndroidManifest.xml:11:5-78
+MERGED from [com.facebook.react:react-native:0.58.5] C:\Users\turbo\.gradle\caches\transforms-1\files-1.1\jetified-react-native-0.58.5.aar\99c2aeceb0ef130f378df3e617ecef02\AndroidManifest.xml:11:5-78
+	android:name
+		ADDED from C:\work\react\src\react-native-training\foodmarble\android\app\src\main\AndroidManifest.xml:5:22-75
+application
+ADDED from C:\work\react\src\react-native-training\foodmarble\android\app\src\main\AndroidManifest.xml:7:5-25:19
+MERGED from [com.facebook.react:react-native:0.58.5] C:\Users\turbo\.gradle\caches\transforms-1\files-1.1\jetified-react-native-0.58.5.aar\99c2aeceb0ef130f378df3e617ecef02\AndroidManifest.xml:13:5-20
+MERGED from [com.facebook.react:react-native:0.58.5] C:\Users\turbo\.gradle\caches\transforms-1\files-1.1\jetified-react-native-0.58.5.aar\99c2aeceb0ef130f378df3e617ecef02\AndroidManifest.xml:13:5-20
+MERGED from [androidx.core:core:1.0.0-rc01] C:\Users\turbo\.gradle\caches\transforms-1\files-1.1\core-1.0.0-rc01.aar\b5b252b13d919023ffab7bd9d8b04fe4\AndroidManifest.xml:22:5-89
+MERGED from [androidx.core:core:1.0.0-rc01] C:\Users\turbo\.gradle\caches\transforms-1\files-1.1\core-1.0.0-rc01.aar\b5b252b13d919023ffab7bd9d8b04fe4\AndroidManifest.xml:22:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0-rc01] C:\Users\turbo\.gradle\caches\transforms-1\files-1.1\versionedparcelable-1.0.0-rc01.aar\66988ebd1d56ea45f63983365d09d87c\AndroidManifest.xml:22:5-23:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0-rc01] C:\Users\turbo\.gradle\caches\transforms-1\files-1.1\versionedparcelable-1.0.0-rc01.aar\66988ebd1d56ea45f63983365d09d87c\AndroidManifest.xml:22:5-23:19
+MERGED from [com.facebook.soloader:soloader:0.6.0] C:\Users\turbo\.gradle\caches\transforms-1\files-1.1\soloader-0.6.0.aar\4463e48a1ad9118ce3c763fc48cbeace\AndroidManifest.xml:11:5-20
+MERGED from [com.facebook.soloader:soloader:0.6.0] C:\Users\turbo\.gradle\caches\transforms-1\files-1.1\soloader-0.6.0.aar\4463e48a1ad9118ce3c763fc48cbeace\AndroidManifest.xml:11:5-20
+MERGED from [org.webkit:android-jsc:r174650] C:\Users\turbo\.gradle\caches\transforms-1\files-1.1\android-jsc-r174650.aar\be9710987ceba6ee52c5cd749dc75a9b\AndroidManifest.xml:2:3-17
+MERGED from [org.webkit:android-jsc:r174650] C:\Users\turbo\.gradle\caches\transforms-1\files-1.1\android-jsc-r174650.aar\be9710987ceba6ee52c5cd749dc75a9b\AndroidManifest.xml:2:3-17
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.0.0-rc01] C:\Users\turbo\.gradle\caches\transforms-1\files-1.1\core-1.0.0-rc01.aar\b5b252b13d919023ffab7bd9d8b04fe4\AndroidManifest.xml:22:18-86
+	android:label
+		ADDED from C:\work\react\src\react-native-training\foodmarble\android\app\src\main\AndroidManifest.xml:9:7-39
+	android:roundIcon
+		ADDED from C:\work\react\src\react-native-training\foodmarble\android\app\src\main\AndroidManifest.xml:11:7-52
+	android:icon
+		ADDED from C:\work\react\src\react-native-training\foodmarble\android\app\src\main\AndroidManifest.xml:10:7-41
+	android:allowBackup
+		ADDED from C:\work\react\src\react-native-training\foodmarble\android\app\src\main\AndroidManifest.xml:12:7-34
+	android:theme
+		ADDED from C:\work\react\src\react-native-training\foodmarble\android\app\src\main\AndroidManifest.xml:13:7-38
+	android:name
+		ADDED from C:\work\react\src\react-native-training\foodmarble\android\app\src\main\AndroidManifest.xml:8:7-38
+activity#com.nativebasekitchensink.MainActivity
+ADDED from C:\work\react\src\react-native-training\foodmarble\android\app\src\main\AndroidManifest.xml:14:7-23:18
+	android:label
+		ADDED from C:\work\react\src\react-native-training\foodmarble\android\app\src\main\AndroidManifest.xml:16:9-41
+	android:windowSoftInputMode
+		ADDED from C:\work\react\src\react-native-training\foodmarble\android\app\src\main\AndroidManifest.xml:18:9-51
+	android:configChanges
+		ADDED from C:\work\react\src\react-native-training\foodmarble\android\app\src\main\AndroidManifest.xml:17:9-79
+	android:name
+		ADDED from C:\work\react\src\react-native-training\foodmarble\android\app\src\main\AndroidManifest.xml:15:9-37
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from C:\work\react\src\react-native-training\foodmarble\android\app\src\main\AndroidManifest.xml:19:9-22:25
+action#android.intent.action.MAIN
+ADDED from C:\work\react\src\react-native-training\foodmarble\android\app\src\main\AndroidManifest.xml:20:13-65
+	android:name
+		ADDED from C:\work\react\src\react-native-training\foodmarble\android\app\src\main\AndroidManifest.xml:20:21-62
+category#android.intent.category.LAUNCHER
+ADDED from C:\work\react\src\react-native-training\foodmarble\android\app\src\main\AndroidManifest.xml:21:13-73
+	android:name
+		ADDED from C:\work\react\src\react-native-training\foodmarble\android\app\src\main\AndroidManifest.xml:21:23-70
+activity#com.facebook.react.devsupport.DevSettingsActivity
+ADDED from C:\work\react\src\react-native-training\foodmarble\android\app\src\main\AndroidManifest.xml:24:7-84
+	android:name
+		ADDED from C:\work\react\src\react-native-training\foodmarble\android\app\src\main\AndroidManifest.xml:24:17-81
+uses-sdk
+INJECTED from C:\work\react\src\react-native-training\foodmarble\android\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\work\react\src\react-native-training\foodmarble\android\app\src\main\AndroidManifest.xml
+INJECTED from C:\work\react\src\react-native-training\foodmarble\android\app\src\main\AndroidManifest.xml
+MERGED from [:react-native-vector-icons] C:\work\react\src\react-native-training\foodmarble\node_modules\react-native-vector-icons\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-vector-icons] C:\work\react\src\react-native-training\foodmarble\node_modules\react-native-vector-icons\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-gesture-handler] C:\work\react\src\react-native-training\foodmarble\node_modules\react-native-gesture-handler\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-gesture-handler] C:\work\react\src\react-native-training\foodmarble\node_modules\react-native-gesture-handler\android\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.react:react-native:0.58.5] C:\Users\turbo\.gradle\caches\transforms-1\files-1.1\jetified-react-native-0.58.5.aar\99c2aeceb0ef130f378df3e617ecef02\AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.react:react-native:0.58.5] C:\Users\turbo\.gradle\caches\transforms-1\files-1.1\jetified-react-native-0.58.5.aar\99c2aeceb0ef130f378df3e617ecef02\AndroidManifest.xml:7:5-9:41
+MERGED from [androidx.appcompat:appcompat:1.0.0-rc01] C:\Users\turbo\.gradle\caches\transforms-1\files-1.1\appcompat-1.0.0-rc01.aar\c219191a24b08fb3c2525c4d69ef5922\AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.0.0-rc01] C:\Users\turbo\.gradle\caches\transforms-1\files-1.1\appcompat-1.0.0-rc01.aar\c219191a24b08fb3c2525c4d69ef5922\AndroidManifest.xml:20:5-44
+MERGED from [androidx.fragment:fragment:1.0.0-rc01] C:\Users\turbo\.gradle\caches\transforms-1\files-1.1\fragment-1.0.0-rc01.aar\785c557e963294230ce99e2e9beadf22\AndroidManifest.xml:20:5-44
+MERGED from [androidx.fragment:fragment:1.0.0-rc01] C:\Users\turbo\.gradle\caches\transforms-1\files-1.1\fragment-1.0.0-rc01.aar\785c557e963294230ce99e2e9beadf22\AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0-rc01] C:\Users\turbo\.gradle\caches\transforms-1\files-1.1\vectordrawable-animated-1.0.0-rc01.aar\e7fd506bf7631f424a851205bbf62157\AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0-rc01] C:\Users\turbo\.gradle\caches\transforms-1\files-1.1\vectordrawable-animated-1.0.0-rc01.aar\e7fd506bf7631f424a851205bbf62157\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0-rc01] C:\Users\turbo\.gradle\caches\transforms-1\files-1.1\legacy-support-core-ui-1.0.0-rc01.aar\3af6c4b4c26adf9558a56a6e9612d25e\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0-rc01] C:\Users\turbo\.gradle\caches\transforms-1\files-1.1\legacy-support-core-ui-1.0.0-rc01.aar\3af6c4b4c26adf9558a56a6e9612d25e\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0-rc01] C:\Users\turbo\.gradle\caches\transforms-1\files-1.1\legacy-support-core-utils-1.0.0-rc01.aar\c52f2b42e9bbe6ccd6c349ab815383d9\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0-rc01] C:\Users\turbo\.gradle\caches\transforms-1\files-1.1\legacy-support-core-utils-1.0.0-rc01.aar\c52f2b42e9bbe6ccd6c349ab815383d9\AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable:1.0.0-rc01] C:\Users\turbo\.gradle\caches\transforms-1\files-1.1\vectordrawable-1.0.0-rc01.aar\6f4bd2e03120e1b335da1bf2e4df5abd\AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable:1.0.0-rc01] C:\Users\turbo\.gradle\caches\transforms-1\files-1.1\vectordrawable-1.0.0-rc01.aar\6f4bd2e03120e1b335da1bf2e4df5abd\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0-rc01] C:\Users\turbo\.gradle\caches\transforms-1\files-1.1\loader-1.0.0-rc01.aar\aad6e495318f090ba079b8d310ba1134\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0-rc01] C:\Users\turbo\.gradle\caches\transforms-1\files-1.1\loader-1.0.0-rc01.aar\aad6e495318f090ba079b8d310ba1134\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0-rc01] C:\Users\turbo\.gradle\caches\transforms-1\files-1.1\viewpager-1.0.0-rc01.aar\bdc653dc847635804872f992722e9bc7\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0-rc01] C:\Users\turbo\.gradle\caches\transforms-1\files-1.1\viewpager-1.0.0-rc01.aar\bdc653dc847635804872f992722e9bc7\AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0-rc01] C:\Users\turbo\.gradle\caches\transforms-1\files-1.1\coordinatorlayout-1.0.0-rc01.aar\2c2782dd6e2b27b38c211d3a01828b83\AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0-rc01] C:\Users\turbo\.gradle\caches\transforms-1\files-1.1\coordinatorlayout-1.0.0-rc01.aar\2c2782dd6e2b27b38c211d3a01828b83\AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0-rc01] C:\Users\turbo\.gradle\caches\transforms-1\files-1.1\drawerlayout-1.0.0-rc01.aar\51e29ff12215ad76b3f7cd180b9048c8\AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0-rc01] C:\Users\turbo\.gradle\caches\transforms-1\files-1.1\drawerlayout-1.0.0-rc01.aar\51e29ff12215ad76b3f7cd180b9048c8\AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0-rc01] C:\Users\turbo\.gradle\caches\transforms-1\files-1.1\slidingpanelayout-1.0.0-rc01.aar\cbfcb6d08766947b72c1dde701d3ce5e\AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0-rc01] C:\Users\turbo\.gradle\caches\transforms-1\files-1.1\slidingpanelayout-1.0.0-rc01.aar\cbfcb6d08766947b72c1dde701d3ce5e\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0-rc01] C:\Users\turbo\.gradle\caches\transforms-1\files-1.1\customview-1.0.0-rc01.aar\472607c9ddba27f8a34e82a32dcca354\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0-rc01] C:\Users\turbo\.gradle\caches\transforms-1\files-1.1\customview-1.0.0-rc01.aar\472607c9ddba27f8a34e82a32dcca354\AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0-rc01] C:\Users\turbo\.gradle\caches\transforms-1\files-1.1\swiperefreshlayout-1.0.0-rc01.aar\8cd4a7d4fef682d2d09e08eb9f90d51d\AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0-rc01] C:\Users\turbo\.gradle\caches\transforms-1\files-1.1\swiperefreshlayout-1.0.0-rc01.aar\8cd4a7d4fef682d2d09e08eb9f90d51d\AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0-rc01] C:\Users\turbo\.gradle\caches\transforms-1\files-1.1\asynclayoutinflater-1.0.0-rc01.aar\581d8e7f4537d5e1297754fd3cb86914\AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0-rc01] C:\Users\turbo\.gradle\caches\transforms-1\files-1.1\asynclayoutinflater-1.0.0-rc01.aar\581d8e7f4537d5e1297754fd3cb86914\AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.0.0-rc01] C:\Users\turbo\.gradle\caches\transforms-1\files-1.1\core-1.0.0-rc01.aar\b5b252b13d919023ffab7bd9d8b04fe4\AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.0.0-rc01] C:\Users\turbo\.gradle\caches\transforms-1\files-1.1\core-1.0.0-rc01.aar\b5b252b13d919023ffab7bd9d8b04fe4\AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0-rc01] C:\Users\turbo\.gradle\caches\transforms-1\files-1.1\versionedparcelable-1.0.0-rc01.aar\66988ebd1d56ea45f63983365d09d87c\AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0-rc01] C:\Users\turbo\.gradle\caches\transforms-1\files-1.1\versionedparcelable-1.0.0-rc01.aar\66988ebd1d56ea45f63983365d09d87c\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0-rc01] C:\Users\turbo\.gradle\caches\transforms-1\files-1.1\cursoradapter-1.0.0-rc01.aar\eea9b8cbed720f0d1901246e6c514eca\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0-rc01] C:\Users\turbo\.gradle\caches\transforms-1\files-1.1\cursoradapter-1.0.0-rc01.aar\eea9b8cbed720f0d1901246e6c514eca\AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0-rc01] C:\Users\turbo\.gradle\caches\transforms-1\files-1.1\documentfile-1.0.0-rc01.aar\4d9989d6e40fec5ec14ec862c0b5e6a2\AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0-rc01] C:\Users\turbo\.gradle\caches\transforms-1\files-1.1\documentfile-1.0.0-rc01.aar\4d9989d6e40fec5ec14ec862c0b5e6a2\AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0-rc01] C:\Users\turbo\.gradle\caches\transforms-1\files-1.1\localbroadcastmanager-1.0.0-rc01.aar\241d6db1a2f891ac55236ca1163ace33\AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0-rc01] C:\Users\turbo\.gradle\caches\transforms-1\files-1.1\localbroadcastmanager-1.0.0-rc01.aar\241d6db1a2f891ac55236ca1163ace33\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0-rc01] C:\Users\turbo\.gradle\caches\transforms-1\files-1.1\print-1.0.0-rc01.aar\17edf81cfea141cfb1bb81b8d6667506\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0-rc01] C:\Users\turbo\.gradle\caches\transforms-1\files-1.1\print-1.0.0-rc01.aar\17edf81cfea141cfb1bb81b8d6667506\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0-rc01] C:\Users\turbo\.gradle\caches\transforms-1\files-1.1\interpolator-1.0.0-rc01.aar\bbf0b3ebe85a8f8a0dfeab7d8f0a11ba\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0-rc01] C:\Users\turbo\.gradle\caches\transforms-1\files-1.1\interpolator-1.0.0-rc01.aar\bbf0b3ebe85a8f8a0dfeab7d8f0a11ba\AndroidManifest.xml:20:5-44
+MERGED from [com.facebook.fresco:fresco:1.10.0] C:\Users\turbo\.gradle\caches\transforms-1\files-1.1\jetified-fresco-1.10.0.aar\201705d7682632c30ba3d4b40980da33\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fresco:1.10.0] C:\Users\turbo\.gradle\caches\transforms-1\files-1.1\jetified-fresco-1.10.0.aar\201705d7682632c30ba3d4b40980da33\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.10.0] C:\Users\turbo\.gradle\caches\transforms-1\files-1.1\imagepipeline-okhttp3-1.10.0.aar\59d6d6df2b9779b673acd48cc878b9bb\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.10.0] C:\Users\turbo\.gradle\caches\transforms-1\files-1.1\imagepipeline-okhttp3-1.10.0.aar\59d6d6df2b9779b673acd48cc878b9bb\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:drawee:1.10.0] C:\Users\turbo\.gradle\caches\transforms-1\files-1.1\jetified-drawee-1.10.0.aar\a8af2293d0ef17cde090666bd0238ba0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:drawee:1.10.0] C:\Users\turbo\.gradle\caches\transforms-1\files-1.1\jetified-drawee-1.10.0.aar\a8af2293d0ef17cde090666bd0238ba0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline:1.10.0] C:\Users\turbo\.gradle\caches\transforms-1\files-1.1\jetified-imagepipeline-1.10.0.aar\f6a47d82be71698b9b46d2b513d8fed7\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline:1.10.0] C:\Users\turbo\.gradle\caches\transforms-1\files-1.1\jetified-imagepipeline-1.10.0.aar\f6a47d82be71698b9b46d2b513d8fed7\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-base:1.10.0] C:\Users\turbo\.gradle\caches\transforms-1\files-1.1\jetified-imagepipeline-base-1.10.0.aar\ea3e91dbd9e7c0e53ee70c5949f362e2\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-base:1.10.0] C:\Users\turbo\.gradle\caches\transforms-1\files-1.1\jetified-imagepipeline-base-1.10.0.aar\ea3e91dbd9e7c0e53ee70c5949f362e2\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.soloader:soloader:0.6.0] C:\Users\turbo\.gradle\caches\transforms-1\files-1.1\soloader-0.6.0.aar\4463e48a1ad9118ce3c763fc48cbeace\AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.soloader:soloader:0.6.0] C:\Users\turbo\.gradle\caches\transforms-1\files-1.1\soloader-0.6.0.aar\4463e48a1ad9118ce3c763fc48cbeace\AndroidManifest.xml:7:5-9:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0-rc01] C:\Users\turbo\.gradle\caches\transforms-1\files-1.1\lifecycle-runtime-2.0.0-rc01.aar\1d96b1caa484e22e87023fdd5307a9fd\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0-rc01] C:\Users\turbo\.gradle\caches\transforms-1\files-1.1\lifecycle-runtime-2.0.0-rc01.aar\1d96b1caa484e22e87023fdd5307a9fd\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0-rc01] C:\Users\turbo\.gradle\caches\transforms-1\files-1.1\lifecycle-viewmodel-2.0.0-rc01.aar\55fd80132e58cb67c081489999435394\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0-rc01] C:\Users\turbo\.gradle\caches\transforms-1\files-1.1\lifecycle-viewmodel-2.0.0-rc01.aar\55fd80132e58cb67c081489999435394\AndroidManifest.xml:20:5-44
+MERGED from [com.facebook.fresco:fbcore:1.10.0] C:\Users\turbo\.gradle\caches\transforms-1\files-1.1\jetified-fbcore-1.10.0.aar\69a2eb96a0fae19201df2e4dc77b8652\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fbcore:1.10.0] C:\Users\turbo\.gradle\caches\transforms-1\files-1.1\jetified-fbcore-1.10.0.aar\69a2eb96a0fae19201df2e4dc77b8652\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0-rc01] C:\Users\turbo\.gradle\caches\transforms-1\files-1.1\lifecycle-livedata-core-2.0.0-rc01.aar\d1e371285005f2dc3f54f3c042256d3e\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0-rc01] C:\Users\turbo\.gradle\caches\transforms-1\files-1.1\lifecycle-livedata-core-2.0.0-rc01.aar\d1e371285005f2dc3f54f3c042256d3e\AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0-rc01] C:\Users\turbo\.gradle\caches\transforms-1\files-1.1\core-runtime-2.0.0-rc01.aar\3f698497f64859c12599e17889726487\AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0-rc01] C:\Users\turbo\.gradle\caches\transforms-1\files-1.1\core-runtime-2.0.0-rc01.aar\3f698497f64859c12599e17889726487\AndroidManifest.xml:20:5-44
+INJECTED from C:\work\react\src\react-native-training\foodmarble\android\app\src\main\AndroidManifest.xml
+INJECTED from C:\work\react\src\react-native-training\foodmarble\android\app\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from C:\work\react\src\react-native-training\foodmarble\android\app\src\main\AndroidManifest.xml
+		ADDED from C:\work\react\src\react-native-training\foodmarble\android\app\src\main\AndroidManifest.xml
+		INJECTED from C:\work\react\src\react-native-training\foodmarble\android\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from C:\work\react\src\react-native-training\foodmarble\android\app\src\main\AndroidManifest.xml
+		ADDED from C:\work\react\src\react-native-training\foodmarble\android\app\src\main\AndroidManifest.xml
+		INJECTED from C:\work\react\src\react-native-training\foodmarble\android\app\src\main\AndroidManifest.xml
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+IMPLIED from C:\work\react\src\react-native-training\foodmarble\android\app\src\main\AndroidManifest.xml:1:1-27:12 reason: org.webkit.android_jsc has a targetSdkVersion < 4
+uses-permission#android.permission.READ_PHONE_STATE
+IMPLIED from C:\work\react\src\react-native-training\foodmarble\android\app\src\main\AndroidManifest.xml:1:1-27:12 reason: org.webkit.android_jsc has a targetSdkVersion < 4
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+IMPLIED from C:\work\react\src\react-native-training\foodmarble\android\app\src\main\AndroidManifest.xml:1:1-27:12 reason: org.webkit.android_jsc requested WRITE_EXTERNAL_STORAGE
