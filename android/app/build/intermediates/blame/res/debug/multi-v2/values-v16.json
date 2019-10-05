@@ -4,7 +4,7 @@
             "outputFile": "C:\\work\\react\\src\\react-native-training\\foodmarble\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v16\\values-v16.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\turbo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-1.0.0-rc01.aar\\c219191a24b08fb3c2525c4d69ef5922\\res\\values-v16\\values-v16.xml",
+                    "source": "C:\\Users\\turbo\\.gradle\\caches\\transforms-2\\files-2.1\\4c712a943b3ef7b03236bd690992ba5a\\appcompat-1.0.0\\res\\values-v16\\values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -23,7 +23,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\turbo\\.gradle\\caches\\transforms-1\\files-1.1\\core-1.0.0-rc01.aar\\b5b252b13d919023ffab7bd9d8b04fe4\\res\\values-v16\\values-v16.xml",
+                    "source": "C:\\Users\\turbo\\.gradle\\caches\\transforms-2\\files-2.1\\2ffb88316df49107418be0872d7babe4\\core-1.0.0\\res\\values-v16\\values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

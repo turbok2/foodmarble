@@ -3,6 +3,7 @@ import {  ImageBackground, View, Image } from "react-native";
 import { Container, 
   Button, 
   H1, 
+  H2,
   H3, 
   Text,
   Content,
@@ -18,7 +19,8 @@ import { Container,
   Input,
   Card,
   CardItem,
-  FooterTab
+  FooterTab,
+  StyleProvider,
 } from "native-base";
 
 import Draggable from  "../../Components/draggable"
@@ -26,6 +28,7 @@ import styles from "./styles";
 const pick1 = require("../../../assets/pick_food1.png");
 const pick2 = require("../../../assets/notyet.png");
 const pick3 = require("../../../assets/notyet.png");
+const footerBg = require("../../../assets/footer-bg.png");
 
 const picks = [
   {
@@ -44,6 +47,8 @@ const picks = [
 
 class SelectFood extends Component {
   render() {
+    const { navigation } = this.props;
+    const city = navigation.getParam('city', '춘천');
     return (
       <Container style={styles.container}>
         <Header
@@ -52,68 +57,126 @@ class SelectFood extends Component {
           iosBarStyle="light-content"
         >
           <Left  style={{ flex:1, backgroundColor: "#ffffff" }}>
-            <Button transparent onPress={() => this.props.navigation.openDrawer()}>
-              {/* <Icon name="menu" style={{ color: "#000000" }} /> */}
-              <Image source = {require("../../../assets/menu-icon.png")}
-              style={{ width: 30, height: 30 }}/>
-            </Button>
+            <Button transparent onPress={() => this.props.navigation.goBack()}>
+              <Image source = {require("../../../assets/back-icon.png")}
+              style={{ width: 25, height: 25 }}/>
+            </Button>            
           </Left>
           <Body style={{ flex:3,alignItems:'center'}}>
-            {/* <Title style={{ color: "#000000" }}>Custom Header</Title> */}
             <Image source = {require("../../../assets/foodmarble-logo.png")} style={{ width: 50, height: 50 }}/>
           </Body>
-          <Right  >
-          </Right>
-        </Header>
-        <Header
-          style={{ backgroundColor: "#dc4239" }}
-          androidStatusBarColor="#dc2015"
-          iosBarStyle="light-content"
-        >
-          <Left style={{flex:1}}>
-            <Button transparent onPress={() => this.props.navigation.goBack()}>
-              <Icon name="arrow-back" style={{ color: "#FFF" }} />
-            </Button>
-          </Left>
-          <Body style={{flex:5, flexDirection:"row"}}>
-            <Image source = {require("../../../assets/search.png")}
+          <Right  style={{ flex:1, backgroundColor: "#ffffff" }} >
+            <Button transparent onPress={() => this.props.navigation.openDrawer()}>
+              <Image source = {require("../../../assets/menu-icon.png")}
               style={{ width: 30, height: 30 }}/>
-            <Title style={{ color: "#FFF", paddingLeft:20 }}>춘천에 대한 검색 결과</Title>
-          </Body>
-          <Right />
-        </Header>
-  
-          {/* <View style={{height:100, backgroundColor:'#f8e71c'}}>
-            <Draggable style={{height:100}}>
-              <View style={{backgroundColor:'#7ed321'}}>
-                <Text>test</Text>
-              </View>
-            </Draggable>          
-          </View> */}
+            </Button>          
+          </Right>
+        </Header> 
+
         <Content  >  
         {/* scrollEnabled={false} */}
-
-          <View style={{flexDirection: "row",height:100, backgroundColor :'#f8e71c'}}>
-              <Draggable>
-                <View style={{backgroundColor:'#7ed321'}}>
-                  <Text>test</Text>
+          <View>
+            <ImageBackground source = {footerBg} style={{flexDirection: "row", width:'100%', height: 50, resizeMode: 'contain', alignItems:'center',justifyContent: 'center' }} >
+              <Image source = {require("../../../assets/search-icon.png")}
+              style={{ width: 25, height: 25 }}/>
+              <Title style={{ color: "#FFF", paddingLeft:20 }}>{city}에 대한 검색 결과</Title>
+            </ImageBackground>
+          </View>
+          <View style={{height: 300, borderColor: "#000000"}} >
+            <ImageBackground source = {require("../../../assets/reasult_foods.png")}
+                style={{ resizeMode: "contain", width: null, flex:1 }}>
+              <View style={{flex:1, flexDirection:'row'}}>
+                <View style={{flex:1}}>
                 </View>
-              </Draggable>
-              <Draggable />
-              <Draggable />
-              <Draggable />
-              <Draggable />
-          </View>        
+                <View style={{flex:1, justifyContent:'center'}}>
+                  <Draggable value='food1'>
+                    <View style={{backgroundColor:'#7ed321'}}>
+                      <Image source = {require("../../../assets/food1.png")} style={{borderColor: '#7ed321',borderWidth: 2}} /> 
+                    </View>
+                  </Draggable>              
+                </View>                
+              </View>    
 
-          <View style={{flex:1}}>
-            <View style={{height: 200, backgroundColor: "#00334d"}}>
+              <View style={{flex:1}}>
+              </View>    
+
+              <View style={{flex:1, flexDirection:'row'}}>
+                <View style={{flex:1}}>
+                </View>
+                <View style={{flex:1}}>
+                </View>
+                <View style={{flex:1, justifyContent:'center'}}>
+                  <Draggable style={{flex:1}}  value='food2'>
+                    <View style={{backgroundColor:'#7ed321'}}>
+                      <Image source = {require("../../../assets/food2.png")} style={{borderColor: '#7ed321',borderWidth: 2}}/> 
+                    </View>
+                  </Draggable>
+                </View>                
+              </View>    
+
+              <View style={{flex:1}}>
+              </View>    
+
+              <View style={{flex:1, flexDirection:'row'}}>
+                <View style={{flex:1}}>
+                </View>    
+                <View style={{flex:1, justifyContent:'center'}}>
+                  <Draggable style={{top: '80%', left:'50%'}}  value='food3'>
+                    <View style={{backgroundColor:'#7ed321'}}>
+                      <Image source = {require("../../../assets/food3.png")} style={{borderColor: '#7ed321',borderWidth: 2}}/> 
+                    </View>
+                  </Draggable>
+                </View>    
+                <View style={{flex:1}}>
+                </View>                                    
+              </View>                                              
+            </ImageBackground>
+          </View>
+    
+
+          {/* <View style={{}}>
+            <View style={{height: 200, borderColor : "#00334d"}}>
               <H1>Drop them here!</H1>
             </View>
             <View style={{height:100}} />
-          </View>
+          </View> */}
 
-          <Image source = {require("../../../assets/reasult_foods.png")}
-              style={{ resizeMode: "stretch", width: null, flex:1 }}/>
+
+          <View style={{marginTop:20 ,flexDirection:"row", justifyContent:'space-around' }}>
+            <View style={{flexDirection:'row'}}>
+              <Image source = {require("../../../assets/heart.png")}
+                  style={{ resizeMode: 'contain', width: 30, height: 30 }}/>
+              <H2 style={{paddingLeft:20}}>먹고 싶은 음식</H2>
+            </View>
+            <View style={{flexDirection:'row'}}>
+              <H3>total </H3><H3>1</H3>
+            </View>
+          </View>            
+          <View style={{marginTop:20 ,flexDirection:"row", justifyContent:'space-around'}}>
+            <Thumbnail large source={pick1} />
+            <Thumbnail large source={pick2} />
+            <Thumbnail large source={pick3} />
+          </View>
+          <View style={{marginTop:10 ,flexDirection:"row", justifyContent:'space-around' }}
+            onLayout={event => {
+              const layout = event.nativeEvent.layout;
+              console.log('height:', layout.height);
+              console.log('width:', layout.width);
+              console.log('x:', layout.x);
+              console.log('y:', layout.y);
+            }}
+          >
+            <H1>첫번째</H1>
+            <H1>두번째</H1>
+            <H1>세번째</H1>
+          </View>
+          
+          {/* onPress={() => this.props.navigation.navigate("ResultPath")}  */}
+          
+          <Button big block style={{marginTop:40 ,margin:20, backgroundColor: "#dc4239",paddingLeft:10}} onPress={() => this.props.navigation.navigate("ResultPath")} >
+              <Text>선택 음식 코스 추천</Text>
+          </Button>
+
           <H1 style={{marginTop:20 }}>태그</H1>
           <View style={{flexDirection:"row"}}>
             <Button small rounded style={{backgroundColor: "#f06e9c", paddingLeft:10}}>
@@ -134,53 +197,25 @@ class SelectFood extends Component {
               <Text>자전거코스</Text>
             </Button>
           </View>
-          <View style={{marginTop:20 ,flexDirection:"row", justifyContent:'space-around' }}>
-            <View>
-              <Image source = {require("../../../assets/heart.png")}
-                  style={{ width: 30, height: 30 }}/>
-              <H1 style={{paddingLeft:20}}>먹고 싶은 음식</H1>
-            </View>
-            <View>
-              <H3>total </H3><H3>1</H3>
-            </View>
-          </View>            
-          <View style={{marginTop:20 ,flexDirection:"row", justifyContent:'space-around'}}>
-            <Thumbnail large source={pick1} />
-            <Thumbnail large source={pick2} />
-            <Thumbnail large source={pick3} />
-          </View>
-          <View style={{marginTop:10 ,flexDirection:"row", justifyContent:'space-around' }}>
-            <H1>첫번째</H1>
-            <H1>두번째</H1>
-            <H1>세번째</H1>
-          </View>
-          <Button big block style={{marginTop:40 ,margin:20, backgroundColor: "#dc4239",paddingLeft:10}}>
-              <Text>선택 음식 코스 추천</Text>
-          </Button>
 
-
-          
         </Content>
 
-
-        <Footer 
-        >
+        <Footer  >
           <FooterTab  >
-            <Button active full backgroundColor="#ed6937">
-            <Image source = {require("../../../assets/favorite-icon.png")}
-              style={{ width: 30, height: 30 }}/>
+            <Button active full onPress={() => this.props.navigation.navigate("Home")}>
+            <Image source = {require("../../../assets/footer1.png")}
+              style={{ width: 120, height: 55 }}/>
             </Button>
-            <Button active full  backgroundColor="#ed6937">
-            <Image source = {require("../../../assets/chat-icon.png")}
-              style={{ width: 30, height: 30 }}/>
+            <Button active full>
+            <Image source = {require("../../../assets/footer2.png")}
+              style={{ width: 120, height: 55 }}/>
             </Button>
-            <Button active full  backgroundColor="#ed6937">
-            <Image source = {require("../../../assets/people-icon.png")}
-              style={{ width: 30, height: 30 }}/>
-            </Button>                        
+            <Button active full>
+            <Image source = {require("../../../assets/footer3.png")}
+              style={{ width: 120, height: 55 }}/>
+            </Button>                                    
           </FooterTab>
-    
-        </Footer>        
+        </Footer>       
       </Container>
     );
   }

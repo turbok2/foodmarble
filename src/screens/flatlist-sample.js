@@ -46,12 +46,12 @@ import {
   Body
 } from "native-base";
 
-import { randomUsers } from './util';
+// import { randomUsers } from './util';
 
-const city1 = require("../../assets/춘천.jpg");
-const city2 = require("../../assets/강릉.jpg");
-const city3 = require("../../assets/속초.jpg");
-const city4 = require("../../assets/고성.jpg");
+const city1 = require("../../assets/춘천.png");
+const city2 = require("../../assets/강릉.png");
+const city3 = require("../../assets/속초.png");
+const city4 = require("../../assets/고성.png");
 
 const citys = [
   {

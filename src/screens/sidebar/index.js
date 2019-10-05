@@ -17,19 +17,6 @@ const drawerCover = require("../../../assets/foodmarble-bg.png");
 const drawerImage = require("../../../assets/foodmarble-logo.png");
 const datas = [
   {
-    name: "Anatomy",
-    route: "Anatomy",
-    icon: "phone-portrait",
-    bg: "#C5F442"
-  },
-  {
-    name: "Header",
-    route: "Header",
-    icon: "arrow-up",
-    bg: "#477EEA",
-    types: "11"
-  },
-  {
     name: "Deck Swiper",
     route: "NHDeckSwiper",
     icon: "swap",

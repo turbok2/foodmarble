@@ -20,10 +20,10 @@ import {
   Body
 } from "native-base";
 
-const city1 = require("../../assets/춘천.jpg");
-const city2 = require("../../assets/강릉.jpg");
-const city3 = require("../../assets/속초.jpg");
-const city4 = require("../../assets/고성.jpg");
+const city1 = require("../../assets/춘천.png");
+const city2 = require("../../assets/강릉.png");
+const city3 = require("../../assets/속초.png");
+const city4 = require("../../assets/고성.png");
 
 const citys = [
   {
@@ -48,32 +48,36 @@ const citys = [
   }
 ];
 
-export default class ListThumbnailCity extends Component {
-    state = {
-      citys
-    };
-      render() {
-        return (
-          <View>
-            <List
-              horizontal={true}
-              dataArray={citys}
-              renderRow={data =>
-                <ListItem avatar>
-                  <Body>
-                    <Thumbnail large source={data.img} />
-                    <View style={{alignItems:"center"}}>
-                      <Text>
-                        {data.text}
-                      </Text>
-                      <Text numberOfLines={1} note>
-                        {data.note}
-                      </Text>
-                    </View>
-                  </Body>
-                </ListItem>}
-            />
-          </View>          
-        );
-      }
+// export default class ListThumbnailCity extends Component {
+function ListThumbnailCity({ onPress }){
+  state = {
+    citys
+  };
+
+  return (
+    <View>
+      <List
+        horizontal={true}
+        dataArray={citys}
+        renderRow={data =>
+          <ListItem 
+            avatar
+            onPress={onPress.bind(this,data)}
+          >
+            <Body>
+              <Thumbnail large source={data.img} />
+              <View style={{alignItems:"center"}}>
+                <Text>
+                  {data.text}
+                </Text>
+                <Text numberOfLines={1} note>
+                  {data.note}
+                </Text>
+              </View>
+            </Body>
+          </ListItem>}
+      />
+    </View>          
+  );
   }
+export default  ListThumbnailCity;

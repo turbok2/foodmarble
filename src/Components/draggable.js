@@ -20,6 +20,7 @@ export default class Draggable extends Component {
     this.panResponder = PanResponder.create({
         onStartShouldSetPanResponder: (e, gesture) => true,
         onPanResponderGrant: (e, gesture) => {
+          // console.warn('onPanResponderGrant')
           this.state.pan.setOffset({
             x: this._val.x,
             y:this._val.y
@@ -31,6 +32,10 @@ export default class Draggable extends Component {
         ]),
         onPanResponderRelease: (e, gesture) => {
           if (this.isDropArea(gesture)) {
+            // alert('selected....: '+e)
+            console.log(e)
+            console.log(gesture)
+
             Animated.timing(this.state.opacity, {
               toValue: 0,
               duration: 1000
@@ -39,13 +44,18 @@ export default class Draggable extends Component {
                 showDraggable: false
               })
             );
-          } 
+          } else {
+            Animated.spring(this.state.pan, {
+              toValue: { x: 0, y: 0 },
+              friction: 5
+            }).start();
+          }
         }
       });
   }
 
   isDropArea(gesture) {
-    return gesture.moveY < 200;
+    return gesture.moveY > 450 && gesture.moveY < 700;
   }
 
   render() {
@@ -62,14 +72,14 @@ export default class Draggable extends Component {
     }
     if (this.state.showDraggable) {
       return (
-        <View style={{ position: "absolute" }}>
+        <View style={{  }}>
           <Animated.View
             {...this.panResponder.panHandlers}
             style={[panStyle, {
                 backgroundColor: "#7ed321",
-                width: 30 * 2,
-                height: 30 * 2,
-                borderRadius: 30,
+                width: 10 * 2,
+                height: 10 * 2,
+                borderRadius: 10,
                 opacity:this.state.opacity
                 }]}
           >
@@ -81,4 +91,3 @@ export default class Draggable extends Component {
     }
   }
 }
-let CIRCLE_RADIUS = 30;

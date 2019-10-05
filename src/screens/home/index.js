@@ -28,6 +28,32 @@ const launchscreenBg = require("../../../assets/foodmarble-bg.png");
 
 
 class Home extends Component {
+  state = {
+    search : ""
+  }
+  handleChange = (text) => {
+    this.setState({
+      search : text
+    })
+  }
+  goSearch = (search) => {
+    // alert('search: '+search)
+    //춘천이 맞으면 이동
+    if(search==="춘천") {
+      this.props.navigation.navigate("SelectFood",{city:search})
+    }
+    //아니면 alert
+    else {
+      alert('현재 춘천 지역 정보만 제공됩니다. '+search+' 지역은 추후 제공예정입니다.')
+    }
+  }
+  goThumbnail = (data) => {
+    // alert('search: '+data.text)
+    this.setState({
+      search : data.text,
+    })    
+    this.forceUpdate();
+  }
   render() {
     return (
       <Container style={styles.container}>
@@ -37,79 +63,73 @@ class Home extends Component {
           iosBarStyle="light-content"
         >
           <Left  style={{ flex:1, backgroundColor: "#ffffff" }}>
-            <Button transparent onPress={() => this.props.navigation.openDrawer()}>
-              {/* <Icon name="menu" style={{ color: "#000000" }} /> */}
+            {/* <Button transparent onPress={() => this.props.navigation.openDrawer()}>
               <Image source = {require("../../../assets/menu-icon.png")}
               style={{ width: 30, height: 30 }}/>
-            </Button>
+            </Button> */}
           </Left>
           <Body style={{ flex:3,alignItems:'center'}}>
             {/* <Title style={{ color: "#000000" }}>Custom Header</Title> */}
             <Image source = {require("../../../assets/foodmarble-logo.png")} style={{ width: 50, height: 50 }}/>
           </Body>
-          <Right  >
+          <Right  style={{ flex:1, backgroundColor: "#ffffff" }} >
+            <Button transparent onPress={() => this.props.navigation.openDrawer()}>
+              <Image source = {require("../../../assets/menu-icon.png")}
+              style={{ width: 30, height: 30 }}/>
+            </Button>          
           </Right>
         </Header>
 
         <Content >
-          <ImageBackground source={launchscreenBg} style={styles.imageContainer}>
+          <ImageBackground source={launchscreenBg} style={{ width:'100%', resizeMode: 'contain'}}>
             <View style={{ marginTop: 100, alignItems : "center" }}>
               <H3 style={styles.text,{ color: "#ffffff"}}>어디로 먹으러 갈까요</H3>
             </View>
-            <View style={{ marginTop: 40, alignItems : "center" }}>
-              <Item regular style={{backgroundColor:"#ffffff", width:"80%"}} >
+            <View style={{ marginTop: 40, alignItems : "center", justifyContent: 'center', flexDirection : 'row' }}>
+              <Item regular style={{justifyContent: 'center' ,backgroundColor:"#ffffff", width:"80%"}} >
                 <Icon active name='search' />
-                <Input placeholder='원하는 음식여행지를 검색' style={{backgroundColor:"#ffffff"}}  />
+                <Input 
+                  placeholder='원하는 음식여행지를 검색' 
+                  style={{backgroundColor:"#ffffff"}}  
+                  value = {this.state.search}
+                  onChangeText = {this.handleChange}
+                />
+
               </Item>
+              <Button small block warning
+                  onPress={
+                  () => this.goSearch(this.state.search)
+              }>
+                <Text>ok</Text>
+              </Button>
             </View>
-            {/* <Image source = {require("../../../assets/foodmarble-logo.png")} />      */}
+
             <View style={{backgroundColor:"#FFFFFF", margin : 20}}>
               <H1>인기 먹거리 여행지</H1>
               <ListThumbnailCity 
                 style={{marginTop: 40}}
+                data={this.state.city}
+                onPress ={this.goThumbnail}
               />   
             </View>
-            <CardList />
-            {/* <View style={{margin : 20}}>
-              <Card style={{flex: 0}}>
-                <CardItem>
-                  <Left>
-                    <Body>
-                      <Text>백종원 3대천왕 지역탐방</Text>
-                      <Text note>위치에 따라 추천해주는 TV맛집코스</Text>
-                    </Body>
-                  </Left>
-                </CardItem>
-                <CardItem cardBody>
-                  <Image 
-                    source={require("../../../assets/card1.png")} style={{ resizeMode: "stretch",
-                    width: null,
-                    flex:1}
-                  }/>
-                </CardItem>
-              </Card>            
-            </View> */}
-    
+            <CardList />   
           </ImageBackground>                    
         </Content>
 
 
-
-
-        <Footer 
-        >
+        <Footer >
           <FooterTab  >
-            <Button active full backgroundColor="#ed6937">
-            <Image source = {require("../../../assets/favorite-icon.png")}
-              style={{ width: 30, height: 30 }}/>
+            <Button active full onPress={() => this.props.navigation.navigate("Home")}>
+            <Image source = {require("../../../assets/footer1.png")}
+              style={{ width: 120, height: 55 }}/>
             </Button>
-            <Button active full  backgroundColor="#ed6937">
-            <Image source = {require("../../../assets/chat-icon.png")}
-              style={{ width: 30, height: 30 }}/>
+            <Button active full  >
+            <Image source = {require("../../../assets/footer2.png")}
+              style={{ width: 120, height: 55 }}/>
             </Button>
-            <Button active full  backgroundColor="#ed6937">
-            <Image source = {require("../../../assets/people-icon.png")}
-              style={{ width: 30, height: 30 }}/>
+            <Button active full  >
+            <Image source = {require("../../../assets/footer3.png")}
+              style={{ width: 120, height: 55 }}/>
             </Button>                        
           </FooterTab>
     

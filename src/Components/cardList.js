@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { AppRegistry, Image } from 'react-native';
 import { Container, Header, Content, Card, CardItem, Thumbnail, Text, Button, Icon, Left, Body, Right,View } from 'native-base';
 
-const card1 = require("../../assets/card1.jpg");
+const card1 = require("../../assets/card1.png");
 const card2 = require("../../assets/card2.jpg");
 const card3 = require("../../assets/card3.jpg");
 const card4 = require("../../assets/card4.jpg");
@@ -40,19 +40,8 @@ const result = cards.map((item, index) => (
     </CardItem>    
     <CardItem >
       <Image 
-        source={item.img} style={{ resizeMode: "stretch",
-        width: null,
-        flex:1}
-      }/>
+        source={item.img} style={{ flex:1, width:'100%',resizeMode: 'contain'}}/>
     </CardItem>    
-    {/* <CardItem bordered>
-      <Body>
-        <Text>{item.body}</Text>
-      </Body>
-    </CardItem> */}
-    {/* <CardItem footer bordered>
-      <Text>GeekyAnts</Text>
-    </CardItem> */}
   </Card>
 ));
 
