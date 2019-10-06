@@ -32,10 +32,7 @@ export default class Draggable extends Component {
         ]),
         onPanResponderRelease: (e, gesture) => {
           if (this.isDropArea(gesture)) {
-            // alert('selected....: '+e)
-            console.log(e)
-            console.log(gesture)
-
+            // alert('selected....: '+gesture.moveY)
             Animated.timing(this.state.opacity, {
               toValue: 0,
               duration: 1000
@@ -55,7 +52,7 @@ export default class Draggable extends Component {
   }
 
   isDropArea(gesture) {
-    return gesture.moveY > 450 && gesture.moveY < 700;
+    return gesture.moveY > 400 && gesture.moveY < 650;
   }
 
   render() {
@@ -72,7 +69,7 @@ export default class Draggable extends Component {
     }
     if (this.state.showDraggable) {
       return (
-        <View style={{  }}>
+        <View style={{ position: "absolute" }}>
           <Animated.View
             {...this.panResponder.panHandlers}
             style={[panStyle, {

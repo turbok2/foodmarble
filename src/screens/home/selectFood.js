@@ -146,7 +146,7 @@ class SelectFood extends Component {
             <View style={{flexDirection:'row'}}>
               <Image source = {require("../../../assets/heart.png")}
                   style={{ resizeMode: 'contain', width: 30, height: 30 }}/>
-              <H2 style={{paddingLeft:20}}>먹고 싶은 음식</H2>
+              <H3 style={{paddingLeft:20}}>먹고 싶은 음식</H3>
             </View>
             <View style={{flexDirection:'row'}}>
               <H3>total </H3><H3>1</H3>
@@ -157,24 +157,10 @@ class SelectFood extends Component {
             <Thumbnail large source={pick2} />
             <Thumbnail large source={pick3} />
           </View>
-          <View style={{marginTop:10 ,flexDirection:"row", justifyContent:'space-around' }}
-            onLayout={event => {
-              const layout = event.nativeEvent.layout;
-              console.log('height:', layout.height);
-              console.log('width:', layout.width);
-              console.log('x:', layout.x);
-              console.log('y:', layout.y);
-            }}
-          >
-            <H1>첫번째</H1>
-            <H1>두번째</H1>
-            <H1>세번째</H1>
-          </View>
-          
-          {/* onPress={() => this.props.navigation.navigate("ResultPath")}  */}
-          
-          <Button big block style={{marginTop:40 ,margin:20, backgroundColor: "#dc4239",paddingLeft:10}} onPress={() => this.props.navigation.navigate("ResultPath")} >
-              <Text>선택 음식 코스 추천</Text>
+
+
+          <Button big block style={{marginTop:20 ,margin:20, backgroundColor: "#dc4239",paddingLeft:10}} onPress={() => this.props.navigation.navigate("ResultPath",{city:city, s_food_1:'막국수',s_food_2:'카페',s_food_3:'닭갈비'})} >
+              <Text>선택 음식 경로 추천</Text>
           </Button>
 
           <H1 style={{marginTop:20 }}>태그</H1>

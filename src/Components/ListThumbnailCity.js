@@ -56,15 +56,15 @@ function ListThumbnailCity({ onPress }){
 
   return (
     <View>
-      <List
+      <List 
         horizontal={true}
         dataArray={citys}
         renderRow={data =>
-          <ListItem 
+          <ListItem style={{ marginLeft:5,}}
             avatar
             onPress={onPress.bind(this,data)}
           >
-            <Body>
+            <Body style={{ marginLeft:5}}>
               <Thumbnail large source={data.img} />
               <View style={{alignItems:"center"}}>
                 <Text>

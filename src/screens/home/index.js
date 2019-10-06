@@ -3,7 +3,9 @@ import {  ImageBackground, View, Image } from "react-native";
 import { Container, 
   Button, 
   H1, 
+  H2,
   H3, 
+  H4,
   Text,
   Content,
   Header,  
@@ -104,8 +106,9 @@ class Home extends Component {
               </Button>
             </View>
 
-            <View style={{backgroundColor:"#FFFFFF", margin : 20}}>
-              <H1>인기 먹거리 여행지</H1>
+            <View style={{backgroundColor:"#FFFFFF", margin : 20, flex:1, alignItems:"center"}}>
+              <H3 style={{marginTop:5}}>인기 먹거리 여행지</H3>
+              <Text note>요새 먹방여행은 여기!  강력추천!</Text>
               <ListThumbnailCity 
                 style={{marginTop: 40}}
                 data={this.state.city}

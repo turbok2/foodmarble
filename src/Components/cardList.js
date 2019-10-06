@@ -38,7 +38,7 @@ const result = cards.map((item, index) => (
         <Text note>{item.note}</Text>
       </Body>
     </CardItem>    
-    <CardItem >
+    <CardItem style={{height:170}}>
       <Image 
         source={item.img} style={{ flex:1, width:'100%',resizeMode: 'contain'}}/>
     </CardItem>    
