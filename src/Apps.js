@@ -8,7 +8,7 @@ import AdvancedDeck from "./screens/deckswiper/advanced";
 import SelectFood from "./screens/home/selectFood";
 import ResultPath from "./screens/home/resultPath";
 import {FinalPath} from "./screens/home/finalPath";
-import {DetailView} from "./screens/home/detailView";
+// import {DetailView} from "./screens/home/detailView";
 import Loading from "./screens/home/Loading";
 
 
@@ -26,8 +26,8 @@ const Drawer = createDrawerNavigator(
     // Flat: { screen: Flat },
     SelectFood: { screen: SelectFood },
     ResultPath: { screen: ResultPath },
-    FinalPath: { screen: FinalPath },
-    DetailView: { screen: DetailView }
+    FinalPath: { screen: FinalPath }
+    // DetailView: { screen: DetailView }
   },
   {
     // initialRouteName: "Home",

@@ -107,10 +107,10 @@ class SelectFood extends Component {
             <Image source = {require("../../../assets/foodmarble-logo.png")} style={{ width: 50, height: 50 }}/>
           </Body>
           <Right  style={{ flex:1, backgroundColor: "#ffffff" }} >
-            <Button transparent onPress={() => this.props.navigation.openDrawer()}>
+            {/* <Button transparent onPress={() => this.props.navigation.openDrawer()}>
               <Image source = {require("../../../assets/menu-icon.png")}
               style={{ width: 30, height: 30 }}/>
-            </Button>          
+            </Button>           */}
           </Right>
         </Header> 
 
