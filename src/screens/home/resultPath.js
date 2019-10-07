@@ -26,22 +26,23 @@ import { Container,
 
 import MapView, {PROVIDER_GOOGLE} from 'react-native-maps'; // 지도 라이브러리
 import ListThumbnailFood from  "../../Components/ListThumbnailFood"
+import {store1, store2, store3, region1, region2, region3 } from   "../home/data"
 
 import styles from "./styles";
 const pick1 = require("../../../assets/pick_food1.png");
 const pick2 = require("../../../assets/pick_food2.png");
 const pick3 = require("../../../assets/pick_food3.png");
+const pick0 = require("../../../assets/notyet.png");
 const footerBg = require("../../../assets/footer-bg.png");
-const marker_icon_1 = require("../../../assets/marker_icon_1.png");
-const marker_icon_2 = require("../../../assets/marker_icon_2.png");
-const marker_icon_3 = require("../../../assets/marker_icon_3.png");
-const marker_icon = require("../../../assets/marker_icon.png");
+// const marker_icon_1 = require("../../../assets/marker_icon_1.png");
+// const marker_icon_2 = require("../../../assets/marker_icon_2.png");
+// const marker_icon_3 = require("../../../assets/marker_icon_3.png");
+// const marker_icon = require("../../../assets/marker_icon.png");
 
-
-const LATITUDE = 0;
-const LONGITUDE = 0;
-const LATITUDE_DELTA = 0.0922;
-const LONGITUDE_DELTA = 0.0421;
+// const LATITUDE = 0;
+// const LONGITUDE = 0;
+// const LATITUDE_DELTA = 0.0922;
+// const LONGITUDE_DELTA = 0.0421;
 
 class ResultPath extends Component {
   constructor(props) {
@@ -53,109 +54,124 @@ class ResultPath extends Component {
       selected1 : 0,
       selected2 : 0,
       selected3 : 0,
-      pick1 : 0,
-      pick2 : 0,
-      pick3 : 0,
-      num : 1,
-      stores: [
-        {lat: 37.9461346, lng: 127.77824129999999, title:'1', description:'gold', icon:marker_icon_1},
-        {lat: 37.93294340000001, lng: 127.79188309999995, title:'2', description:'sliver', icon:marker_icon_2},
-        {lat: 37.9295615, lng: 127.78120779999995, title:'3', description:'bronze', icon:marker_icon_3},
-        {lat: 37.8816598, lng: 127.74964069999999, title:'4', description:'good', icon:marker_icon},
-        {lat: 37.9378277, lng: 127.77708080000002, title:'4', description:'good', icon:marker_icon}
-      ],
-      region: {
-        latitude: 37.9138972,
-        longitude: 127.7707618999999,
-        latitudeDelta: LATITUDE_DELTA,
-        longitudeDelta: LONGITUDE_DELTA,
-      }
+      s_food_1_pick : pick0,
+      s_food_2_pick : pick0,
+      s_food_3_pick : pick0,
+      pick1 : "",
+      pick2 : "",
+      pick3 : "",
+      num : 0,
+      id : 1,
+      onetime_arg : 0,
+      stores: store1,
+      region: region1
+      // stores: [
+      //   {lat: 37.9461346, lng: 127.77824129999999, title:'1', description:'gold', icon:marker_icon_1},
+      //   {lat: 37.93294340000001, lng: 127.79188309999995, title:'2', description:'sliver', icon:marker_icon_2},
+      //   {lat: 37.9295615, lng: 127.78120779999995, title:'3', description:'bronze', icon:marker_icon_3},
+      //   {lat: 37.8816598, lng: 127.74964069999999, title:'4', description:'good', icon:marker_icon},
+      //   {lat: 37.9378277, lng: 127.77708080000002, title:'4', description:'good', icon:marker_icon}
+      // ],
+      // region: {
+      //   latitude: 37.9138972,
+      //   longitude: 127.7707618999999,
+      //   latitudeDelta: LATITUDE_DELTA,
+      //   longitudeDelta: LONGITUDE_DELTA,
+      // }
     }
   }  
   goThumbnail = (data) => {
-    // alert('selected_id: '+data.selected_id) 
+    // console.warn('selected_id: '+data.selected_id+'num : '+this.state.num+'id : '+this.state.id) 
     this.setState({
       selected_id : data.selected_id,
     })    
     let num_select = data.selected_id.split('_')
-    switch (Number(num_select[0])) {
+    switch (this.state.id) {
       case 1 : 
         this.setState({
           selected1 : 5,
-          pick1 : Number(num_select[1])
+          pick1 : String(this.state.id)+'_'+data.selected_id
         })
         break;
       case 2 : 
         this.setState({
           selected2 : 5,
-          pick2 : Number(num_select[1])
+          pick2 : String(this.state.id)+'_'+data.selected_id
         })
         break;
       case 3 : 
         this.setState({
           selected3 : 5,
-          pick3 : Number(num_select[1])
+          pick3 : String(this.state.id)+'_'+data.selected_id
         })
         break;            
     }
     
     // this.forceUpdate();
   }
-  onPress_pick = (kind) => {
-    // alert(kind)
+  onPress_pick = (id, kind) => {
+    // console.warn("id: "+id+" kind : "+kind)
+    if (kind==0) return;
     this.setState({
-      num : kind
+      num : kind,
+      id : id
     })
     switch (kind) {
       case 1 :
         this.setState({
-          stores: [
-            {lat: 37.9461346, lng: 127.77824129999999, title:'1', description:'gold', icon:marker_icon_1},
-            {lat: 37.93294340000001, lng: 127.79188309999995, title:'2', description:'sliver', icon:marker_icon_2},
-            {lat: 37.9295615, lng: 127.78120779999995, title:'3', description:'bronze', icon:marker_icon_3},
-            {lat: 37.8816598, lng: 127.74964069999999, title:'4', description:'good', icon:marker_icon},
-            {lat: 37.9378277, lng: 127.77708080000002, title:'5', description:'good', icon:marker_icon}
-          ],
-          region: {
-            latitude: 37.9138972,
-            longitude: 127.7707618999999,
-            latitudeDelta: LATITUDE_DELTA,
-            longitudeDelta: LONGITUDE_DELTA,
-          }
+          // stores: [
+          //   {lat: 37.9461346, lng: 127.77824129999999, title:'1', description:'gold', icon:marker_icon_1},
+          //   {lat: 37.93294340000001, lng: 127.79188309999995, title:'2', description:'sliver', icon:marker_icon_2},
+          //   {lat: 37.9295615, lng: 127.78120779999995, title:'3', description:'bronze', icon:marker_icon_3},
+          //   {lat: 37.8816598, lng: 127.74964069999999, title:'4', description:'good', icon:marker_icon},
+          //   {lat: 37.9378277, lng: 127.77708080000002, title:'5', description:'good', icon:marker_icon}
+          // ],
+          stores : store1,
+          region : region1
+          // region: {
+          //   latitude: 37.9138972,
+          //   longitude: 127.7707618999999,
+          //   latitudeDelta: LATITUDE_DELTA,
+          //   longitudeDelta: LONGITUDE_DELTA,
+          // }
         })  
         break;      
       case 2 :
         this.setState({
-          stores: [
-            {lat: 37.8914143, lng: 127.7764909, title:'1', description:'gold', icon:marker_icon_1},
-            {lat: 37.8843694, lng: 127.77804579999997, title:'2', description:'sliver', icon:marker_icon_2},
-            {lat: 37.93280939999999, lng: 127.79408360000002, title:'3', description:'bronze', icon:marker_icon_3},
-            {lat: 37.85558699999999, lng: 127.75785189999999, title:'4', description:'good', icon:marker_icon},
-            {lat: 37.89295930000001, lng: 127.77684780000004, title:'5', description:'good', icon:marker_icon}
-          ],
-          region: {
-            latitude: 37.894119818888888,
-            longitude: 127.77596775,
-            latitudeDelta: LATITUDE_DELTA,
-            longitudeDelta: LONGITUDE_DELTA,
-          }
+          // stores: [
+          //   {lat: 37.8914143, lng: 127.7764909, title:'1', description:'gold', icon:marker_icon_1},
+          //   {lat: 37.8843694, lng: 127.77804579999997, title:'2', description:'sliver', icon:marker_icon_2},
+          //   {lat: 37.93280939999999, lng: 127.79408360000002, title:'3', description:'bronze', icon:marker_icon_3},
+          //   {lat: 37.85558699999999, lng: 127.75785189999999, title:'4', description:'good', icon:marker_icon},
+          //   {lat: 37.89295930000001, lng: 127.77684780000004, title:'5', description:'good', icon:marker_icon}
+          // ],
+          stores : store2,
+          region : region2
+          // region: {
+          //   latitude: 37.894119818888888,
+          //   longitude: 127.77596775,
+          //   latitudeDelta: LATITUDE_DELTA,
+          //   longitudeDelta: LONGITUDE_DELTA,
+          // }
         })  
         break;          
       case 3 :
         this.setState({
-          stores: [
-            {lat: 37.8629041, lng: 127.72346670000002, title:'1', description:'gold', icon:marker_icon_1},
-            {lat: 37.9330983, lng: 127.79336839999996, title:'2', description:'sliver', icon:marker_icon_2},
-            {lat: 37.8696168, lng: 127.70635820000007, title:'3', description:'bronze', icon:marker_icon_3},
-            {lat: 37.9294243, lng: 127.78302480000002, title:'4', description:'good', icon:marker_icon},
-            {lat: 37.8633215, lng: 127.7235412, title:'5', description:'good', icon:marker_icon}
-          ],
-          region: {
-            latitude: 37.8980012,
-            longitude: 127.75841755,
-            latitudeDelta: LATITUDE_DELTA,
-            longitudeDelta: LONGITUDE_DELTA,
-          }
+          // stores: [
+          //   {lat: 37.8629041, lng: 127.72346670000002, title:'1', description:'gold', icon:marker_icon_1},
+          //   {lat: 37.9330983, lng: 127.79336839999996, title:'2', description:'sliver', icon:marker_icon_2},
+          //   {lat: 37.8696168, lng: 127.70635820000007, title:'3', description:'bronze', icon:marker_icon_3},
+          //   {lat: 37.9294243, lng: 127.78302480000002, title:'4', description:'good', icon:marker_icon},
+          //   {lat: 37.8633215, lng: 127.7235412, title:'5', description:'good', icon:marker_icon}
+          // ],
+          stores : store3,
+          region : region3
+          // region: {
+          //   latitude: 37.8980012,
+          //   longitude: 127.75841755,
+          //   latitudeDelta: LATITUDE_DELTA,
+          //   longitudeDelta: LONGITUDE_DELTA,
+          // }
         })  
         break;        
     }
@@ -176,14 +192,29 @@ class ResultPath extends Component {
         />
     })
   }
+  changeSelectedPath = (s_food_1,s_food_2,s_food_3) => {
+    if (this.state.onetime_arg==0){
+      // console.warn('전달된 값: '+s_food_1+' '+s_food_2+' '+s_food_3)
+      if (s_food_1==0) {
+        this.setState({num : 1, id: 1})
+      } else {
+        this.setState({num : s_food_1, id : 1})
+      }        
+      this.setState({
+        onetime_arg : 1
+      })
+    } 
+  }
 
   render() {
     const { navigation } = this.props;
-    const city = navigation.getParam('city', 'none');
-    const s_food_1 = navigation.getParam('s_food_1', 'none');
-    const s_food_2 = navigation.getParam('s_food_2', 'none');
-    const s_food_3 = navigation.getParam('s_food_3', 'none');
-
+    const city = navigation.getParam('city', 'nowhere');
+    const s_food_1 = navigation.getParam('s_food_1', 0);
+    const s_food_2 = navigation.getParam('s_food_2', 0);
+    const s_food_3 = navigation.getParam('s_food_3', 0);
+    // console.warn('전달된 값: '+s_food_1+' '+s_food_2+' '+s_food_3)
+    this.changeSelectedPath(s_food_1,s_food_2,s_food_3)
+    
     return (
       <Container style={styles.container}>
         <Header
@@ -192,7 +223,7 @@ class ResultPath extends Component {
           iosBarStyle="light-content"
         >
           <Left  style={{ flex:1, backgroundColor: "#ffffff" }}>
-            <Button transparent onPress={() => this.props.navigation.goBack()}>
+            <Button transparent onPress={() => this.props.navigation.navigate("SelectFood")}>
               <Image source = {require("../../../assets/back-icon.png")}
               style={{ width: 25, height: 25 }}/>
             </Button>            
@@ -241,7 +272,7 @@ class ResultPath extends Component {
                 style={{marginTop: 10}}
                 // data={this.state.selected_id}
                 onPress ={this.goThumbnail}
-                num = {this.state.num}
+                num =  {this.state.num}
           />
           <View style={{marginTop:20 ,flexDirection:"row", justifyContent:'space-around' }}>
             <View style={{flexDirection:'row'}}>
@@ -254,19 +285,18 @@ class ResultPath extends Component {
             </View>
           </View>            
           <View style={{marginTop:20 ,flexDirection:"row", justifyContent:'space-around'}}>
-          <TouchableOpacity onPress={this.onPress_pick.bind(this,1)} >
-            <Thumbnail large source={pick1} style={{borderColor:'red', borderWidth:this.state.selected1}}/>
-          </TouchableOpacity>
-          <TouchableOpacity onPress={this.onPress_pick.bind(this,2)} >
-            <Thumbnail large source={pick2} style={{borderColor:'red', borderWidth:this.state.selected2}}/>
-          </TouchableOpacity>
-          <TouchableOpacity onPress={this.onPress_pick.bind(this,3)} >
-            <Thumbnail large source={pick3} style={{borderColor:'red', borderWidth:this.state.selected3}}/>
-          </TouchableOpacity>
-
+            <TouchableOpacity onPress={this.onPress_pick.bind(this,1,s_food_1)} >
+              <Thumbnail large source={(s_food_1==0)? pick0 : (s_food_1==1)? pick1 : (s_food_1==2)? pick2 : pick3} style={{borderColor:'red', borderWidth:this.state.selected1}}/>
+            </TouchableOpacity>
+            <TouchableOpacity onPress={this.onPress_pick.bind(this,2,s_food_2)} >
+              <Thumbnail large source={(s_food_2==0)? pick0 : (s_food_2==1)? pick1 : (s_food_2==2)? pick2 : pick3} style={{borderColor:'red', borderWidth:this.state.selected2}}/>
+            </TouchableOpacity>
+            <TouchableOpacity onPress={this.onPress_pick.bind(this,3,s_food_3)} >
+              <Thumbnail large source={(s_food_3==0)? pick0 : (s_food_3==1)? pick1 : (s_food_3==2)? pick2 : pick3} style={{borderColor:'red', borderWidth:this.state.selected3}}/>
+            </TouchableOpacity>
           </View>
 
-          <Button big block style={{marginTop:40 ,margin:20, backgroundColor: "#dc4239",paddingLeft:10}}>
+          <Button big block style={{marginTop:40 ,margin:20, backgroundColor: "#dc4239",paddingLeft:10}} onPress={() => this.props.navigation.navigate("FinalPath",{city:city, s_food_1:this.state.pick1, s_food_2:this.state.pick2, s_food_3:this.state.pick3})} >
               <Text>음식 경로 확정</Text>
           </Button>
 

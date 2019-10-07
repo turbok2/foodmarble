@@ -16,20 +16,20 @@ import styles from "./style";
 const drawerCover = require("../../../assets/foodmarble-bg.png");
 const drawerImage = require("../../../assets/foodmarble-logo.png");
 const datas = [
-  {
-    name: "Deck Swiper",
-    route: "NHDeckSwiper",
-    icon: "swap",
-    bg: "#3591FA",
-    types: "2"
-  },    
-  {
-    name: "Flat",
-    route: "Flat",
-    icon: "swap",
-    bg: "#3591FA",
-    types: "2"
-  },      
+  // {
+  //   name: "Deck Swiper",
+  //   route: "NHDeckSwiper",
+  //   icon: "swap",
+  //   bg: "#3591FA",
+  //   types: "2"
+  // },    
+  // {
+  //   name: "Flat",
+  //   route: "Flat",
+  //   icon: "swap",
+  //   bg: "#3591FA",
+  //   types: "2"
+  // },      
   {
     name: "SelectFood",
     route: "SelectFood",

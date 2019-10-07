@@ -7,24 +7,31 @@ import SimpleDeck from "./screens/deckswiper/simple";
 import AdvancedDeck from "./screens/deckswiper/advanced";
 import SelectFood from "./screens/home/selectFood";
 import ResultPath from "./screens/home/resultPath";
+import {FinalPath} from "./screens/home/finalPath";
+import {DetailView} from "./screens/home/detailView";
+import Loading from "./screens/home/Loading";
 
 
 import Home from "./screens/home/";
 import SideBar from "./screens/sidebar";
-import NHDeckSwiper from "./screens/deckswiper/";
-import Flat from "./screens/flatlist-sample";
+// import NHDeckSwiper from "./screens/deckswiper/";
+// import Flat from "./screens/flatlist-sample";
 
 
 const Drawer = createDrawerNavigator(
   {
+    Loading: { screen: Loading },
     Home: { screen: Home },
-    NHDeckSwiper: { screen: NHDeckSwiper },       
-    Flat: { screen: Flat },
+    // NHDeckSwiper: { screen: NHDeckSwiper },       
+    // Flat: { screen: Flat },
     SelectFood: { screen: SelectFood },
-    ResultPath: { screen: ResultPath }
+    ResultPath: { screen: ResultPath },
+    FinalPath: { screen: FinalPath },
+    DetailView: { screen: DetailView }
   },
   {
-    initialRouteName: "Home",
+    // initialRouteName: "Home",
+    initialRouteName: "Loading",
     contentOptions: {
       activeTintColor: "#e91e63"
     },

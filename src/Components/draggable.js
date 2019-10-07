@@ -31,8 +31,10 @@ export default class Draggable extends Component {
           null, { dx: this.state.pan.x, dy: this.state.pan.y }
         ]),
         onPanResponderRelease: (e, gesture) => {
+          // console.warn('onPanResponderRelease :'+this.props.d_value)
+
           if (this.isDropArea(gesture)) {
-            // alert('selected....: '+gesture.moveY)
+            // alert('selected....: '+this.props.d_value)
             Animated.timing(this.state.opacity, {
               toValue: 0,
               duration: 1000
@@ -41,6 +43,7 @@ export default class Draggable extends Component {
                 showDraggable: false
               })
             );
+            this.props.onPress(this.props.d_value)
           } else {
             Animated.spring(this.state.pan, {
               toValue: { x: 0, y: 0 },
