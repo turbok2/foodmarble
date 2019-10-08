@@ -20,10 +20,10 @@ import {
   Body
 } from "native-base";
 
-const city1 = require("../../assets/춘천.png");
-const city2 = require("../../assets/강릉.png");
-const city3 = require("../../assets/속초.png");
-const city4 = require("../../assets/고성.png");
+const city1 = require("../../assets/city1.png");
+const city2 = require("../../assets/city2.png");
+const city3 = require("../../assets/city3.png");
+const city4 = require("../../assets/city4.png");
 
 const citys = [
   {

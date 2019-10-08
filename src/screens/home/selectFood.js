@@ -114,8 +114,7 @@ class SelectFood extends Component {
           </Right>
         </Header> 
 
-        <Content  >  
-        {/* scrollEnabled={false} */}
+        <Content scrollEnabled={false} >  
           <View>
             <ImageBackground source = {footerBg} style={{flexDirection: "row", width:'100%', height: 50, resizeMode: 'contain', alignItems:'center',justifyContent: 'center' }} >
               <Image source = {require("../../../assets/search-icon.png")}
@@ -141,12 +140,10 @@ class SelectFood extends Component {
                 </View>                
               </View>    
 
-              <View style={{flex:1}}>
-              </View>    
+              {/* <View style={{flex:1}}>
+              </View>     */}
 
               <View style={{flex:1, flexDirection:'row'}}>
-                <View style={{flex:1}}>
-                </View>
                 <View style={{flex:1}}>
                 </View>
                 <View style={{flex:1, justifyContent:'center'}}>
@@ -162,8 +159,8 @@ class SelectFood extends Component {
                 </View>                
               </View>    
 
-              <View style={{flex:1}}>
-              </View>    
+              {/* <View style={{flex:1}}>
+              </View>     */}
 
               <View style={{flex:1, flexDirection:'row'}}>
                 <View style={{flex:1}}>
@@ -241,15 +238,15 @@ class SelectFood extends Component {
           <FooterTab  >
             <Button active full onPress={() => this.props.navigation.navigate("Home")}>
             <Image source = {require("../../../assets/footer1.png")}
-              style={{ width: 120, height: 55 }}/>
+              style={{ width: 140, height: 55 }}/>
             </Button>
             <Button active full>
             <Image source = {require("../../../assets/footer2.png")}
-              style={{ width: 120, height: 55 }}/>
+              style={{ width: 140, height: 55 }}/>
             </Button>
             <Button active full>
             <Image source = {require("../../../assets/footer3.png")}
-              style={{ width: 120, height: 55 }}/>
+              style={{ width: 140, height: 55 }}/>
             </Button>                                    
           </FooterTab>
         </Footer>       

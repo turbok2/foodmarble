@@ -306,15 +306,15 @@ class ResultPath extends Component {
           <FooterTab  >
             <Button active full onPress={() => this.props.navigation.navigate("Home")}>
             <Image source = {require("../../../assets/footer1.png")}
-              style={{ width: 120, height: 55 }}/>
+              style={{ width: 140, height: 55 }}/>
             </Button>
             <Button active full>
             <Image source = {require("../../../assets/footer2.png")}
-              style={{ width: 120, height: 55 }}/>
+              style={{ width: 140, height: 55 }}/>
             </Button>
             <Button active full>
             <Image source = {require("../../../assets/footer3.png")}
-              style={{ width: 120, height: 55 }}/>
+              style={{ width: 140, height: 55 }}/>
             </Button>                                    
           </FooterTab>
         </Footer>       

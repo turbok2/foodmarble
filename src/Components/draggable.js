@@ -77,9 +77,9 @@ export default class Draggable extends Component {
             {...this.panResponder.panHandlers}
             style={[panStyle, {
                 backgroundColor: "#7ed321",
-                width: 10 * 2,
-                height: 10 * 2,
-                borderRadius: 10,
+                width: 20 * 2,
+                height: 20 * 2,
+                borderRadius: 20,
                 opacity:this.state.opacity
                 }]}
           >
